@@ -18,12 +18,13 @@
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Add Course", "Create", "Courses", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("My Upcomming Courses", "Mine", "Courses", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Course I'm going", "Attending", "Courses", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Leturer I'm following", "Attending", "Courses", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
-                 @Html.Partial("_LoginPartial")
-            </dixv>
+                @Html.Partial("_LoginPartial")
+            </div>
         </div>
     </nav>
     <div class="container body-content">
